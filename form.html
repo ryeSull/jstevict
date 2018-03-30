@@ -96,7 +96,7 @@
               </div>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+            <button class="btn btn-primary btn-lg btn-block" type="submit" id="submit_button">Submit</button>
           </form>
         </div>
       </div>
@@ -110,28 +110,7 @@
     <script src="assets/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
     <script src="assets/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="assets/bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
-    <script>
-      // This will eventually be in its own file. Just holding it here for reference.
-      // JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-    </script>
+    <script type="text/javascript" src="assets/jsPDF-master/dist/jspdf.debug.js"></script>
+    <script src="assets/custom-js/custom.js"></script>
   </body>
 </html>
