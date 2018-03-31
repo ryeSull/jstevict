@@ -43,7 +43,7 @@ function pdfCreature() {
 };
 
 
-// below is an ajax solution for creating the pdf. currently in use is a
+// below is a jQuery solution for creating the pdf. currently in use is a
 // raw javascript function which may be safer long term... though ajax may
 // be more efficient. Will need more research here.
 
